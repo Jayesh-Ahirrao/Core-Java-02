@@ -103,13 +103,13 @@ public class Programmer extends Employee implements ITraveller {
 	@Override
 	public String getPassportDetails() {
 		// TODO Auto-generated method stub
-		return null;
+		return passportDetails;
 	}
 
 	@Override
 	public int getTravelHours() {
 		// TODO Auto-generated method stub
-		return 0;
+		return extraHours;
 	}
 
 }
