@@ -66,6 +66,8 @@ public class Main {
 			System.out.println("Welcome");
 		} catch (InvalidPwdException e) {
 			System.err.println(e);
+		}finally {
+			sc.close();
 		}
 
 	}

@@ -7,9 +7,9 @@ public class StackOverflowException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 
 	public StackOverflowException() {
-		
+
 	}
-	
+
 	public StackOverflowException(String message) {
 		super(message);
 	}
@@ -25,6 +25,5 @@ public class StackOverflowException extends RuntimeException {
 		// TODO Auto-generated method stub
 		return super.toString();
 	}
-	
-	
+
 }

@@ -49,6 +49,8 @@ public class Main {
 			System.out.println("welcom " + firstName + " " + lastName);
 		} catch (IncorrectFormattingExceptions e) {
 			System.err.println(e);
+		}finally {
+			sc.close();
 		}
 	}
 

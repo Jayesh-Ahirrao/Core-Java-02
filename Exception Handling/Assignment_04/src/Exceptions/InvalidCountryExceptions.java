@@ -8,6 +8,7 @@ public class InvalidCountryExceptions extends RuntimeException {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	@SuppressWarnings("unused")
 	private String message;
 
 	public InvalidCountryExceptions() {
