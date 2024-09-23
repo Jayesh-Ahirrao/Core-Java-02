@@ -1,6 +1,7 @@
 package FileIO;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class FIleIO {
@@ -26,7 +27,14 @@ public class FIleIO {
 			System.out.println("\n\nAlphabets: " + alphabetsCount + "\ndigit count: " + digitCount);
 		} catch (Exception e) {
 			System.err.println(e);
-			// TODO: handle exception
+		}finally {
+			if(buffReader != null) {
+				try {
+					buffReader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
 
 	}
