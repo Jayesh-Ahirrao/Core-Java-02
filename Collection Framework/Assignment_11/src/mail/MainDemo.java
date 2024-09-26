@@ -17,13 +17,11 @@ public class MainDemo {
 		mails.add(new Mail(103, "c", "cc", "acccaa", LocalDateTime.of(2024, 9, 26, 7, 8)));
 
 		Collections.sort(mails, new Comparator<>() {
-
 			@Override
 			public int compare(Mail o1, Mail o2) {
 				// TODO Auto-generated method stub
 				return o2.getRec_time().compareTo(o1.getRec_time());
 			}
-
 		});
 
 		for (Mail m : mails) {
