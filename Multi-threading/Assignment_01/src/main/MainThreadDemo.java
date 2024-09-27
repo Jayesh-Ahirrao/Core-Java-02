@@ -8,7 +8,6 @@ public class MainThreadDemo {
 
 		System.out.println("Name of default: \t\t" + mainThread.getName());
 		System.out.println("Priority of default thread: \t" + mainThread.getPriority());
-
 	}
 
 }
