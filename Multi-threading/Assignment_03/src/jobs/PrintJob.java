@@ -1,6 +1,17 @@
 package jobs;
 
 public class PrintJob implements Runnable {
+	Thread t;
+
+	public PrintJob() {
+		// TODO Auto-generated constructor stub
+		t = new Thread(this);
+	}
+
+	public PrintJob(Runnable r) {
+		// TODO Auto-generated constructor stub
+		t = new Thread(r);
+	}
 
 	@Override
 	public void run() {
@@ -16,4 +27,13 @@ public class PrintJob implements Runnable {
 		}
 
 	}
+
+	public Thread getT() {
+		return t;
+	}
+
+	public void setT(Thread t) {
+		this.t = t;
+	}
+
 }

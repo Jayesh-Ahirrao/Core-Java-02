@@ -21,13 +21,10 @@ public class PrintJobDemo {
 
 		System.out.println("start of main method");
 		PrintJob job1 = new PrintJob();
-		Thread t1 = new Thread(job1);
-
 		PrintJob job2 = new PrintJob();
-		Thread t2 = new Thread(job2);
 
-		t1.start();
-		t2.start();
+		job1.getT().start();
+		job2.getT().start();
 
 		System.out.println("End of main method");
 	}
