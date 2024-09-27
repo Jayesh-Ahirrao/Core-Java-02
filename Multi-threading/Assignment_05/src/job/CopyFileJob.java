@@ -7,9 +7,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class CopyFileJob implements Runnable {
-	Thread t;
-	String source;
-	String destination;
+	private Thread t;
+	private String source;
+	private  String destination;
 
 	public CopyFileJob(String source, String destination) {
 		super();
