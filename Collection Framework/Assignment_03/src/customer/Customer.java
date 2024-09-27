@@ -1,6 +1,13 @@
 package customer;
 
-public class Customer {
+import java.io.Serializable;
+import java.util.Scanner;
+
+public class Customer implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String email;
 	private String contactNumber;
@@ -15,6 +22,18 @@ public class Customer {
 		this.name = name;
 		this.email = email;
 		this.contactNumber = contactNumber;
+	}
+
+	public void accept() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter name:");
+		this.name = sc.nextLine();
+
+		System.out.println("Enter email:");
+		this.email = sc.nextLine();
+
+		System.out.println("Enter contact number:");
+		this.contactNumber = sc.nextLine();
 	}
 
 	@Override
