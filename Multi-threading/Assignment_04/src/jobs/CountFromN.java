@@ -1,8 +1,8 @@
 package jobs;
 
 public class CountFromN implements Runnable {
-	Thread t;
-	int number;
+	private Thread t;
+	private int number;
 
 	public CountFromN() {
 		// TODO Auto-generated constructor stub

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Collection {
 
@@ -54,6 +55,23 @@ public class Collection {
 		System.out.println();
 
 		System.out.println("************ List using for each method ************");
+		list.forEach(new Consumer<String>() {
+
+			@Override
+			public void accept(String t) {
+				// TODO Auto-generated method stub
+				System.out.println(t);
+
+			}
+
+		});
+
+		System.out.println();
+
+		System.out.println("************ List using for each Lambda fn ************");
+		list.forEach((s) -> {
+			System.out.println(s);
+		});
 
 		System.out.println();
 

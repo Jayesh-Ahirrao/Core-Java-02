@@ -9,7 +9,7 @@ import java.io.IOException;
 public class CopyFileJob implements Runnable {
 	private Thread t;
 	private String source;
-	private  String destination;
+	private String destination;
 
 	public CopyFileJob(String source, String destination) {
 		super();
@@ -30,8 +30,7 @@ public class CopyFileJob implements Runnable {
 		String line;
 
 		try (BufferedReader br = new BufferedReader(new FileReader(source));
-				BufferedWriter bw = new BufferedWriter(new FileWriter(destination))) 
-		{
+				BufferedWriter bw = new BufferedWriter(new FileWriter(destination))) {
 			while ((line = br.readLine()) != null) {
 				bw.write(line);
 				System.out.println(line);

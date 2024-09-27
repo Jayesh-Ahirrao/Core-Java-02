@@ -1,7 +1,7 @@
 package jobs;
 
 public class PrintJob implements Runnable {
-	Thread t;
+	private Thread t;
 
 	public PrintJob() {
 		// TODO Auto-generated constructor stub
