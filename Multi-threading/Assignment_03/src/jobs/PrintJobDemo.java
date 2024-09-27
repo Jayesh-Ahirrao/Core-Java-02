@@ -20,8 +20,24 @@ public class PrintJobDemo {
 	public static void main(String[] args) {
 
 		System.out.println("start of main method");
+		
+		
+		
 		PrintJob job1 = new PrintJob();
-		PrintJob job2 = new PrintJob();
+		
+		
+		PrintJob job2 = new PrintJob(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+				for (int i = 1; i < 6; i++) {
+					System.out.println(i);
+				}
+
+			}
+		});
 
 		job1.getT().start();
 		job2.getT().start();

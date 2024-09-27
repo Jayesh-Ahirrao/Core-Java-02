@@ -16,19 +16,22 @@ From Thread-0 Element: 5
  
  */
 
-public class PrintJobDemo {
+public class CountToNDemo {
 	public static void main(String[] args) {
 
 		System.out.println("start of main method");
-		PrintJob job1 = new PrintJob();
-		
-		Thread t1 = new Thread(job1);
 
-		PrintJob job2 = new PrintJob();
-		Thread t2 = new Thread(job2);
+		CountFromN job1 = new CountFromN();
+		CountFromN job2 = new CountFromN(10);
+		CountFromN job3 = new CountFromN(80);
 
-		t1.start();
-		t2.start();
+		job1.getT().setName("CCCCCCCCC");
+		job2.getT().setName("BBBBBBBBB");
+		job3.getT().setName("AAAAAAAAA");
+
+		job1.getT().start();
+		job2.getT().start();
+		job3.getT().start();
 
 		System.out.println("End of main method");
 	}
